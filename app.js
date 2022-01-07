@@ -419,7 +419,7 @@ function noteOn(note, velocity) {
   const velocityGain = ctx.createGain();
   velocityGain.gain.value = velocityGainAmount;
 
-  osc.type = "sin";
+  osc.type = "square";
   osc.frequency.value = midiToFrequency(note);
 
   console.log(channelKeyMap[note.toString()]);
